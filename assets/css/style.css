@@ -21,7 +21,7 @@
 html,
 body {
     position: relative;
-    overflow-x: hidden;
+    overflow: auto;
     margin: 0 auto;
     padding: 0;
     width: 1670px;
@@ -132,13 +132,14 @@ h2 {
 }
 
 footer .container {
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
-.container {
+main .container {
     padding-bottom: 60px;
     margin: 0 10% 0 10%;
     position: relative;
+    
 }
 
 .txt1 {
@@ -284,10 +285,14 @@ footer .container {
     padding-bottom: 500px;
     position: relative;
     margin-bottom: 350px;
+    
 }
+
+
 
 .circle {
     position: absolute;
+    overflow-x: hidden;
     width: 40%;
     right: -350px;
     top: -550px;
@@ -316,12 +321,19 @@ footer .container {
 
 
 footer {
+    width: 1670px;
     padding-top: 80px;
     color: white;
     background-color: black;
+    overflow: auto;
+    height: 550px;
+    overflow: hidden;
 }
 
-footer p {}
+footer .container {
+    margin: 0 10% 0 10%;
+    width: 90%;
+}
 
 footer h4 {
     font-size: 24;
@@ -362,12 +374,11 @@ footer h4 {
     background-color: #FFF;
     position: relative;
     transform: rotate(50deg);
-    top: -90px;
-    right: -570px;
+    top: -150px;
+    right: -800px;
 }
 
 .band-animation p {
-    
     animation: shake 3s infinite alternate;
 }
 
