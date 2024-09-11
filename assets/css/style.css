@@ -13,7 +13,13 @@
     src: url("../fonts/WorkSans-Regular.ttf");
 }
 
-html, body{
+@font-face {
+    font-family: "Lora";
+    src: url("../fonts/Lora-Regular.ttf");
+}
+
+html,
+body {
     position: relative;
     overflow-x: hidden;
     margin: 0 auto;
@@ -70,7 +76,7 @@ header .black {
     padding-bottom: 135px;
 }
 
-.bear a {
+a {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
@@ -80,7 +86,7 @@ header .black {
     font-family: "WorkSans-Regular";
 }
 
-.bear a:hover {
+a:hover {
     background-color: white;
     color: black;
 }
@@ -125,8 +131,12 @@ h2 {
     position: relative;
 }
 
+footer .container {
+    padding-bottom: 10px;
+}
+
 .container {
-    padding-bottom:60px;
+    padding-bottom: 60px;
     margin: 0 10% 0 10%;
     position: relative;
 }
@@ -211,27 +221,29 @@ h2 {
     bottom: -100px;
 }
 
-.seite3{
+.seite3 {
     color: white;
     background-color: rgb(0, 0, 0);
     padding-top: 180px;
     padding-bottom: 630px;
 }
 
-.seite3 .container > p, .seite4 .container > p{
+.seite3 .container>p,
+.seite4 .container>p {
     font-family: "WorkSans-Regular";
     font-size: 20px;
     font-weight: 400;
 }
 
-.txt3, .txt4{
+.txt3,
+.txt4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     margin-bottom: 135px;
 }
 
-.left{
+.left {
     font-family: "Inter_24pt-Regular";
     font-size: 84px;
     font-weight: 700;
@@ -239,26 +251,26 @@ h2 {
     line-height: 80px;
 }
 
-.right p{
+.right p {
     font-family: "Inter_24pt-Regular";
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
 }
 
-.right div{
+.right div {
     font-family: "WorkSans-Regular";
     font-size: 20px;
     font-weight: 400;
 }
 
-.goldenbear{
+.goldenbear {
     width: 65%;
     position: absolute;
     z-index: 1;
 }
 
-.gb2{
+.gb2 {
     position: absolute;
     width: 35%;
     right: 85px;
@@ -266,7 +278,7 @@ h2 {
     z-index: 2;
 }
 
-.seite4{
+.seite4 {
     background-color: white;
     padding-top: 350px;
     padding-bottom: 500px;
@@ -274,23 +286,99 @@ h2 {
     margin-bottom: 350px;
 }
 
-.circle{
+.circle {
     position: absolute;
     width: 40%;
     right: -350px;
     top: -550px;
     z-index: 0;
+    animation: spin 15s linear infinite;
 }
 
-.rosebear{
+.rosebear {
     width: 65%;
     position: absolute;
     right: 0;
 }
 
-.pb3{
+.pb3 {
     position: absolute;
     width: 35%;
     left: 70px;
     top: 580px;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+footer {
+    padding-top: 80px;
+    color: white;
+    background-color: black;
+}
+
+footer p {}
+
+footer h4 {
+    font-size: 24;
+    font-family: "Inter_24pt-Regular";
+    font-weight: 700;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+
+.socials {
+    padding-top: 40px;
+}
+
+.socials img{
+    width:18px;
+    margin-right: 5px;
+}
+
+.copyright{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.ngo-logo{
+    transform: scale(.3);
+}
+
+.band-animation{
+    /* overflow:hidden; */
+    font-family: "Lora";
+    background-color: white;
+    color:black;
+    font-size: 80px;
+    font-weight: 600;
+
+    background-color: #FFF;
+    position: relative;
+    transform: rotate(50deg);
+    top: -90px;
+    right: -570px;
+}
+
+.band-animation p {
+    
+    animation: shake 3s infinite alternate;
+}
+
+.outline-jahr{
+    color:white;
+    -webkit-text-stroke: 0.2pt black;
+
+}
+
+@keyframes shake{
+    100% {
+        transform: translateX(-200px)
+    }
 }
