@@ -17,6 +17,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(0, 0, 0);
+    width: 1670px;
 }
 
 * {
@@ -121,19 +122,21 @@ h2 {
     position: relative;
 }
 
-.seite2 .container {
-    padding: 0px 10% 60px 10%;
+.container {
+    padding-bottom:60px;
+    margin: 0 10% 0 10%;
+    position: relative;
 }
 
 .txt1 {
-    width: 50%;
+    width: 35%;
     padding-top: 300px;
-    margin: 100px auto 60vh auto;
+    margin: 100px auto 80vh auto;
 }
 
 .txt2 {
-    width: 50%;
-    margin: 0 auto 20vh auto;
+    width: 35%;
+    margin: 0 auto 30vh auto;
 }
 
 .txt1 h3 {
@@ -159,7 +162,7 @@ h2 {
 .img1 {
     width: 25%;
     position: absolute;
-    top: -40px;
+    top: -100px;
     right: 7vw;
 }
 
@@ -167,40 +170,97 @@ h2 {
     width: 20%;
     position: absolute;
     left: 5vw;
-    top: 35vh;
+    top: 20vh;
 }
 
 .img3 {
     width: 20%;
     position: absolute;
     right: 0;
-    top: 80vh;
+    top: 55vh;
 }
 
 .img4 {
     width: 25%;
     position: absolute;
-    left: 10vw;
-    top: 100vh;
+    left: 20vw;
+    top: 70vh;
 }
 
 .img5 {
     width: 25%;
     position: absolute;
     right: 10vw;
-    top: 115vh;
+    top: 95vh;
 }
 
 .img6 {
     width: 20%;
     position: absolute;
     left: 0;
-    top: 145vh;
+    top: 135vh;
 }
 
 .img7 {
     width: 30%;
     position: absolute;
-    right: 10vw;
-    top: 190vh;
+    right: 20vw;
+    bottom: -100px;
+}
+
+.seite3{
+    color: white;
+    padding-top: 20vh;
+    padding-bottom: 70vh;
+}
+
+.seite3 .container > p{
+    font-family: "WorkSans-Regular";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.txt3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+
+.left{
+    font-family: "Inter_24pt-Regular";
+    font-size: 84px;
+    font-weight: 700;
+    width: 300px;
+    line-height: 80px;
+}
+
+.right p{
+    font-family: "Inter_24pt-Regular";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.right div{
+    font-family: "WorkSans-Regular";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.goldenbear{
+    width: 65%;
+    position: absolute;
+}
+
+.gb2{
+    position: absolute;
+    width: 35%;
+    right: 5vw;
+    top: 62vh;
+}
+
+.seite4{
+    background-color: white;
+    height: 100vh;
 }
