@@ -13,21 +13,22 @@
     src: url("../fonts/WorkSans-Regular.ttf");
 }
 
-body {
+html, body{
+    position: relative;
+    overflow-x: hidden;
     margin: 0 auto;
     padding: 0;
-    background-color: rgb(0, 0, 0);
     width: 1670px;
 }
 
 * {
-
     box-sizing: border-box;
 }
 
 header {
     width: 100%;
     text-align: center;
+    background-color: rgb(0, 0, 0);
 }
 
 .linie {
@@ -66,7 +67,7 @@ header .black {
     justify-content: space-between;
     padding: 0 85px;
     margin-top: 225px;
-    margin-bottom: 135px;
+    padding-bottom: 135px;
 }
 
 .bear a {
@@ -86,10 +87,12 @@ header .black {
 
 .seite1 {
     color: white;
+    background-color: rgb(0, 0, 0);
     background-image: url('../img/map.svg');
     background-repeat: no-repeat;
     background-size: 320px;
-    background-position: bottom 90px right 0px;
+    background-position: bottom 190px right 0px;
+    padding-bottom: 100px;
 }
 
 .seite1 .container {
@@ -131,7 +134,7 @@ h2 {
 .txt1 {
     width: 35%;
     padding-top: 300px;
-    margin: 100px auto 720px auto;
+    margin: 0 auto 720px auto;
 }
 
 .txt2 {
@@ -210,6 +213,7 @@ h2 {
 
 .seite3{
     color: white;
+    background-color: rgb(0, 0, 0);
     padding-top: 180px;
     padding-bottom: 630px;
 }
@@ -251,6 +255,7 @@ h2 {
 .goldenbear{
     width: 65%;
     position: absolute;
+    z-index: 1;
 }
 
 .gb2{
@@ -258,10 +263,34 @@ h2 {
     width: 35%;
     right: 85px;
     top: 558px;
+    z-index: 2;
 }
 
 .seite4{
     background-color: white;
-    padding-top: 450px;
+    padding-top: 350px;
+    padding-bottom: 500px;
+    position: relative;
+    margin-bottom: 350px;
 }
 
+.circle{
+    position: absolute;
+    width: 40%;
+    right: -350px;
+    top: -550px;
+    z-index: 0;
+}
+
+.rosebear{
+    width: 65%;
+    position: absolute;
+    right: 0;
+}
+
+.pb3{
+    position: absolute;
+    width: 35%;
+    left: 70px;
+    top: 580px;
+}
