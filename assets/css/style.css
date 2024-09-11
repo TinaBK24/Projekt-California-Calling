@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Inter_18pt-Regular";
+    src: url("../fonts/Inter_18pt-Regular.ttf");
+}
+@font-face {
+    font-family: "Inter_24pt-Regular";
+    src: url("../fonts/Inter_24pt-Regular.ttf");
+}
+@font-face {
+    font-family: "WorkSans-Regular";
+    src: url("../fonts/WorkSans-Regular.ttf");
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+}
+
+.linie{
+    width: 1px;
+    height: 20vh;
+    background-color:#FFFFFF4D;
+    margin: 0 auto 5vh auto;
+}
+
+header p{
+    font-family: "WorkSans-Regular";
+    color: white;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+header h1{
+    font-family: "Inter_24pt-Regular";
+    font-size: 96px;
+    color: white;
+    width: 600px;
+    line-height: 80px;
+    margin: 0 auto 5vh auto;
+    text-align: center;
+}
+
+header .black{
+    color: #000000;
+    text-shadow: 0 0 3px rgba(255, 255, 255);
+}
+
+.bear{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    margin-top: 25vh;
+}
+
+.bear a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    border: 1px solid #AAAAAA;
+    padding: 10px 25px;
+    transition: all 0.5s ease;
+}
+
+.bear a:hover{
+    background-color: white;
+    color: black;
+}
