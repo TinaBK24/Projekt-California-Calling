@@ -2,45 +2,48 @@
     font-family: "Inter_18pt-Regular";
     src: url("../fonts/Inter_18pt-Regular.ttf");
 }
+
 @font-face {
     font-family: "Inter_24pt-Regular";
     src: url("../fonts/Inter_24pt-Regular.ttf");
 }
+
 @font-face {
     font-family: "WorkSans-Regular";
     src: url("../fonts/WorkSans-Regular.ttf");
 }
 
-body{
+body {
+    margin: 0;
+    padding: 0;
     background-color: rgb(0, 0, 0);
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+
     box-sizing: border-box;
 }
 
-header{
+header {
     width: 100%;
     text-align: center;
 }
 
-.linie{
+.linie {
     width: 1px;
     height: 20vh;
-    background-color:#FFFFFF4D;
+    background-color: #FFFFFF4D;
     margin: 0 auto 5vh auto;
 }
 
-header p{
+header p {
     font-family: "WorkSans-Regular";
     color: white;
     text-align: center;
     margin-bottom: 3vh;
 }
 
-header h1{
+header h1 {
     font-family: "Inter_24pt-Regular";
     font-size: 96px;
     color: white;
@@ -50,30 +53,154 @@ header h1{
     text-align: center;
 }
 
-header .black{
+header .black {
     color: #000000;
     text-shadow: 0 0 3px rgba(255, 255, 255);
 }
 
-.bear{
+.bear {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 5vw;
     margin-top: 25vh;
+    margin-bottom: 15vh;
 }
 
-.bear a{
+.bear a {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
     border: 1px solid #AAAAAA;
     padding: 10px 25px;
     transition: all 0.5s ease;
+    font-family: "WorkSans-Regular";
 }
 
-.bear a:hover{
+.bear a:hover {
     background-color: white;
     color: black;
+}
+
+.seite1 {
+    color: white;
+    background-image: url('../img/map.svg');
+    background-repeat: no-repeat;
+    background-size: 320px;
+    background-position: bottom 90px right 0px;
+}
+
+.seite1 .container {
+    padding: 20px 10% 60px 10%;
+}
+
+h2 {
+    font-size: 98px;
+}
+
+.seite1 p {
+    font-family: "WorkSans-Regular";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0px;
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+}
+
+.seite1 div {
+    font-family: "Inter_24pt-Regular";
+    font-size: 86px;
+    font-weight: 700;
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+}
+
+.seite2 {
+    background-color: white;
+    position: relative;
+}
+
+.seite2 .container {
+    padding: 0px 10% 60px 10%;
+}
+
+.txt1 {
+    width: 50%;
+    padding-top: 300px;
+    margin: 100px auto 60vh auto;
+}
+
+.txt2 {
+    width: 50%;
+    margin: 0 auto 20vh auto;
+}
+
+.txt1 h3 {
+    font-family: "Inter_24pt-Regular";
+    font-size: 86px;
+    font-weight: 700;
+    line-height: 86px;
+    margin: 0;
+    /* margin-bottom: 10px; */
+}
+
+.seite2 p {
+    font-family: "WorkSans-Regular";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    /* border: 1px solid red; */
+
+    /* border: 1px solid red; */
+    /* margin-bottom: 10px; */
+}
+
+.img1 {
+    width: 25%;
+    position: absolute;
+    top: -40px;
+    right: 7vw;
+}
+
+.img2 {
+    width: 20%;
+    position: absolute;
+    left: 5vw;
+    top: 35vh;
+}
+
+.img3 {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 80vh;
+}
+
+.img4 {
+    width: 25%;
+    position: absolute;
+    left: 10vw;
+    top: 100vh;
+}
+
+.img5 {
+    width: 25%;
+    position: absolute;
+    right: 10vw;
+    top: 115vh;
+}
+
+.img6 {
+    width: 20%;
+    position: absolute;
+    left: 0;
+    top: 145vh;
+}
+
+.img7 {
+    width: 30%;
+    position: absolute;
+    right: 10vw;
+    top: 190vh;
 }
